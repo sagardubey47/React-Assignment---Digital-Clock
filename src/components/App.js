@@ -27,16 +27,9 @@ class App extends Component {
     render() { 
 
         return(
-            <>
-               <h1 style={
-                   {padding: "10px", 
-                   backgroundColor: "yellow", 
-                   display:"inline-block",
-                   margin:"50px"
-                   }}>
-                   {this.state.date.toLocaleTimeString()}
-                   </h1>
-            </>
+            <div className="clock">
+               <h3 id="time">{this.state.date.toLocaleTimeString()}</h3>
+            </div>
         )
     }
 }
